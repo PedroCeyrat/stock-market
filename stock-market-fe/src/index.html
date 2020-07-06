@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/stock_icon-icons.com_53431.png" type="image/x-icon">
+    <title>Stock Markets</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stock-markets">
+            <header class="header">
+                <img src="img/stock_icon.png" alt="Logo" class="header__logo">
+                <form class="search">
+                    <input type="text" class="search__field" placeholder="Amazon, Google, etc." list="companies-list"/>
+                    <datalist id="companies-list"></datalist>
+                    <button class="btn search__btn">
+                        <svg class="search__icon">
+                            <use href="img/icons.svg#icon-magnifying-glass"></use>
+                        </svg>
+                        <span>Search</span>
+                    </button>
+                </form>
+            </header>
+            <div class="stock-companies scroll">
+                <dl class=list></dl>
+            </div>
+        </div>
+        <div class="company">
+            <div class="title">
+                <h2 class="heading-2"></h2>
+            </div>
+            <div class="chart"></div>
+            <iframe class="info"></iframe>
+        </div>
+        <div class="favourites">
+            <svg class="star__icon">
+                <use href="img/icons.svg#icon-dark-star"></use>
+            </svg>
+            <h2 class="heading-2">My Favourites</h2>
+            <div class="stock-companies scroll">
+                <dl class="list"></dl>
+            </div>
+            <div class="copyright">
+                <!--&copy; by Pedro Ceyrat.-->Powered by
+                <a href="https://www.alphavantage.co" target="_blank" class="link">Alpha Vantage</a> and
+                <a href="https://www.mediawiki.org" target="_blank" class="link">MediaWiki</a>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
